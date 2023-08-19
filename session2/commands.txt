@@ -1,0 +1,36 @@
+1-  at the first i decompress task 2 
+unzip Updated-Task-02.zip
+
+2-I saerch about the hidden files 
+ls -a
+then i decompressed level-1
+tar -xf .level-1.tar
+then i then i decompressed level-2
+tar -xf .level-2.tar
+cd level-2
+then 
+ls
+
+
+3-  i locate the READEME file and open it 
+cat README.txt 
+and then i locate level-3 by 
+find -name level-3
+
+
+4- then i enter the level-3
+cd ./gBT5u0vLT5
+ls
+tar -xf level-3
+cd level-3
+
+5- i open the README file and i locate the link to get the size ,i found a different colored file so i expect that it's the file that i need
+cat X6lKChFKsj
+and i found the size that i needed ,it was 73byte
+find -size 73c
+
+
+6-  i enter to the file by 
+cd m7lRDpRTUj
+cat  xVMvVOKNW5
+
