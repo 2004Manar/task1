@@ -1,0 +1,46 @@
+1- at the first i created a new user and i made apassword for him and a new group and then i added the user to the group and then i switchmy main user to the new user by 
+sudo useradd -m Osc
+sudo passwd Osc
+sudo groupadd Osc_group
+sudo usermod -aG Osc-group Osc
+su Osc
+
+
+
+2-  i created a directory named "permission_practice" and inside it i create a 3 files and i give them some permissions
+mkdir permission_practice
+touch public_file.txt
+chmod 666 public_file.txt
+touch private_file.txt
+chmod u+rw private_file.txt
+touch executable_script.sh
+chmod 75 executable_script.sh
+
+
+
+
+3-  i changed the owner of the file private_file.txt and moved it to another group
+sudo chown  osc private_file.txt
+sudo chgroup Osc_group private_file.txt
+
+
+
+
+4-i open a new background process named sleep 1000 and then i killed it by it's ID
+slepp 1000 &
+kill 4187
+and after that i opend vim and suspend it using ctrl+z.
+vim
+and then i kill it using it's name
+killall -9 vim
+and then i Verified that the vim and sleep processes are no longer running using 
+jobs
+
+
+
+5-I installed the neofetch package and then i removed it by
+sudo apt update
+sudo apt install neofetch
+sudo apt remove neofetch
+ 
+
