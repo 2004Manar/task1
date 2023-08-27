@@ -1,0 +1,36 @@
+#!/bin/bash
+echo "1. Addition"
+echo "2. Subtraction"
+echo "3. Multiplication"
+echo "4. Division"
+echo "5. Exit"
+while true;
+do
+echo "Enter your choise:"
+read choise
+echo "Enter the first number:"
+read num1
+echo "Enter the second number:"
+read num2
+if [ $choise = 1 ]
+then
+echo "$num1 + $num2 = $((num1+num2)) " 
+elif [ $choise = 2 ]
+then 
+	echo "$num1 - $num2 = $((num1-num2))"
+elif [ $choise = 3 ]
+then 
+	echo "$num1 * $num2 = $((num1*num2))"
+elif [ $choise = 4 ]
+then
+	echo "$num1 / $num2 = $((num1/num2))"
+
+elif [ $choise = 5 ]
+then
+echo "Exit"
+break
+else 
+	echo "invaild operation"
+	continue
+fi 
+done
